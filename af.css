@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+body{
+    overflow-y: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    background-color: black;
+}
+#loader{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   /* background-color: #fff;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 999999;
+}
+#loader>img{
+    position: absolute;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+}
+#loader #l1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #d3ff4e;
+    clip-path: polygon(0 0, 30% 0, 70% 100%, 40% 100%);
+
+}
+#loader #l11{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #4EC0FF;
+    clip-path: polygon(30% 0, 60% 0, 100% 100%, 70% 100%);
+
+
+}
+#loader #l2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #121314;
+    clip-path: polygon(0 0, 0% 100%, 40% 100%);
+
+
+}
+#loader #l3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #070708;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%);
+
+}
+#main2{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+#one{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #4EC0FF;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+#two{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#45AEE8;
+    clip-path: polygon(0 60%, 0% 100%, 40% 100%);
+
+
+}
+#one2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #28313E;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+#two2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #1E2833;
+    clip-path: polygon(60% 0, 100% 0, 100% 40%);
+
+
+}
+#nav{
+    height: 90px;
+    width: 100%;
+    padding: 55px 35px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav1>img{
+    height: 35px;
+    margin-left: 10px;
+}
+#nav1 h2{
+    color: aliceblue;
+    font-weight: 400;
+    margin-left: 510px;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav2{
+   /* display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+#nav i{
+    color: aliceblue;
+    font-size: x-large;
+    margin-left: 100px;
+}
+#text{
+    position: absolute;
+    width: 300px;
+    top: 40%;
+    left: 4%;
+    z-index: 993;
+}
+#text p{
+    font-size: 25px;
+    font-weight: 50;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+#main #back{
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    opacity: 0.4;
+    transform: rotate(30deg);
+    height: 800px;
+    z-index: 999;
+}
+#main #front{
+    position: absolute;
+    left: 18%;
+    top: -5%;
+    transform: rotate(-30deg);
+    height: 800px;
+    z-index: 9999;
+    filter: drop-shadow(1.2);
+}
+#blur{
+    position: absolute;
+    height: 650px;
+    left: 69%;
+    top: -8%;
+    transform: rotate(20deg);
+    opacity: 0.5;
+    filter: blur(5.5);
+}
+
+#main2>h1{
+    position: absolute;
+    z-index: 999;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    word-spacing: 250px;
+    transform: translate(-50%,-50%);
+    font-size: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+#main2>h2{
+    position: absolute;
+    z-index: 9999;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+#but{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#but #b1{
+    position: absolute;
+    top: 84%;
+    left: 34%;
+    text-align: center;
+    padding: 14px 55px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: gilroy;
+    color: aliceblue;
+    border: none;
+    background-color: #fc7e5b;
+    z-index: 9999;
+}
+#b1>i{
+    position: absolute;
+    font-size: x-large;
+    margin-right: px;
+    top: 20%;
+    left: 12%;
+}
+#but #b2{
+    position: absolute;
+    top: 84%;
+    left: 49%;
+    padding: 14px 55px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: gilroy;
+    color: aliceblue;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.226);
+    z-index: 9999;
+}
+#b2>i{
+    position: absolute;
+    font-size: x-large;
+    margin-right: px;
+    top: 22%;
+    left: 12%;
+}
+#line1{
+    position: absolute;
+    left: 7%;
+    top: 12%;
+    height: 25%;
+    width: 1px;
+    background-color: aliceblue;
+    z-index: 999;
+}
+#line2{
+    position: absolute;
+    left: 7%;
+    top: 58%;
+    height: 23%;
+    width: 1px;
+    background-color: aliceblue;
+    z-index: 999;
+}
+#st{
+    position: absolute;
+    left: 83.5%;
+    top: 52%;
+    height: 0.3px;
+    width: 80px;
+    transform: rotate(-28deg);
+    background-color: aliceblue;
+    z-index: 999;
+}
+#main2 #i1{
+    position: absolute;
+    color: aliceblue;
+    top: 86%;
+    left: 4%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+#main2 #i2{
+    position: absolute;
+    color: aliceblue;
+    top: 85.5%;
+    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+    border-radius: 50%;
+    background-color: rgba(252, 254, 255, 0.265);
+}
+#side{
+    position: absolute;
+    top: 45%;
+    left: 85%;
+    
+}
+#side>h1{
+    font-family: gilroy;
+    color: aliceblue;
+    font-weight: 600;
+}
+#side>h2{
+    font-size: 22px;
+    font-family: gilroy;
+    color: aliceblue;
+    font-weight: 100;
+    margin-left: 5px;
+}
+#navb{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 85%;
+    left: 82%;
+    gap: 35px;
+    height: 50px;
+    width: 200px;
+   
+}
+#navb>i{
+    font-size: x-large;
+    color: aliceblue;
+}
